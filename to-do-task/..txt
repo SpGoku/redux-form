@@ -17,25 +17,6 @@
             ii. Show all data of created to-do.
             iii. Set edit and delete icon in action row
 
-
-
-
-
-export const CREATE_TODO = "CREATE_TODO";
-
-dispatch({ type: CREATE_TODO, payload: res.data });
-
-case CREATE_TODO:
-  return {toDoList : [...state?.toDoList, payload] }
-
-export const CREATE_TODO = "CREATE_TODO";
-
-dispatch({ type: CREATE_TODO, payload: res.data });
-
-case CREATE_TODO:
-  return {toDoList : [...state?.toDoList, payload] }
-
-
 export const CREATE_TODO = "CREATE_TODO";
 
 dispatch({ type: CREATE_TODO, payload: res.data });
