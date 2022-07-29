@@ -21,6 +21,20 @@
 
 
 
+export const CREATE_TODO = "CREATE_TODO";
+
+dispatch({ type: CREATE_TODO, payload: res.data });
+
+case CREATE_TODO:
+  return {toDoList : [...state?.toDoList, payload] }
+
+export const CREATE_TODO = "CREATE_TODO";
+
+dispatch({ type: CREATE_TODO, payload: res.data });
+
+case CREATE_TODO:
+  return {toDoList : [...state?.toDoList, payload] }
+
 
 export const CREATE_TODO = "CREATE_TODO";
 
