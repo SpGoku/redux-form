@@ -11,7 +11,7 @@ export const addToDo = (data) => async (dispatch) => {
   try{
     const res = await toDoService.create(data);
     
-    return Promise.resolve(res.data);
+    return Promise.resolve(res);
   } catch(err) {
     return Promise.reject(err);
   }

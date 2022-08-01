@@ -39,10 +39,18 @@ let ToDoMForm = (props) => {
 
   const FormSubmit = async (values) => {
     if(id){
-      dispatch(updateToDo(id, values)).then(history.push("/todos"))
+      dispatch(updateToDo(id, values)).then((res) => {
+        if(res.status === 200){
+          history.push("/todos")
+        }
+      })
       setOpen(true)
     } else {
-      dispatch(addToDo(values)).then(history.push("/todos"))
+      dispatch(addToDo(values)).then((res) => {
+        if(res.status === 200){
+          history.push("/todos")
+        }
+      })
       setOpen(true)
     }
   }
