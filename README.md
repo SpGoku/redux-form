@@ -40,3 +40,7 @@ npm i
 ```
 npm start
 ```
+
+##### Deployed site (Some functions and CSS are diffrent from this repo):
+
+https://to-dos-mern.netlify.app/
